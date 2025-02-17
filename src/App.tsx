@@ -54,6 +54,15 @@ function App() {
 
 				<InputPanel />
 				<ArrayDisplay />
+				<InputPanel
+					inputNumbers={inputNumbers}
+					setInputNumbers={setInputNumbers}
+					target={target}
+					setTarget={setTarget}
+					isSorted={isSorted}
+					handleSearch={handleSearch}
+					isSearching={isSearching}
+				/>
 				<div className="bg-primary text-primary-foreground rounded-lg px-4 py-2 mt-6 mb-2">
 					{steps[currentStep]?.message || "Enter numbers and target to begin"}
 				</div>
