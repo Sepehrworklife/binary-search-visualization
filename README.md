@@ -17,7 +17,7 @@ The Binary Search Visualizer is an interactive React application designed to hel
    1. Build
       1. `pnpm build`
       2. `pnpm preview`
-      3. Browse `http://localhost:5173` by default
+      3. Browse `http://localhost:4173` by default
    3. Run (Development)
       1. `pnpm dev`
       2. Browse `http://localhost:5173` by default
