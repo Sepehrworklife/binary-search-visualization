@@ -1,5 +1,5 @@
-import { StepState } from "../hooks/useBinarySearch";
-import { cn } from "../lib/utils";
+import { StepState } from "@/hooks/useBinarySearch";
+import { cn } from "@/lib/utils";
 
 type Props = {
 	sortedNumbers: number[];

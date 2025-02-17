@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
-import ArrayDisplay from "./components/ArrayDisplay";
-import InputPanel from "./components/InputPanel";
-import Legend from "./components/Legend";
-import useBinarySearch, { StepState } from "./hooks/useBinarySearch";
+import ArrayDisplay from "@/components/ArrayDisplay";
+import InputPanel from "@/components/InputPanel";
+import Legend from "@/components/Legend";
+import useBinarySearch, { StepState } from "@/hooks/useBinarySearch";
 
 function App() {
 	const [steps, setSteps] = useState<StepState[]>([]);

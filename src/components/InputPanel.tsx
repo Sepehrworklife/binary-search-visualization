@@ -1,6 +1,5 @@
-// FIXME: fix relative path
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 type Props = {
 	inputNumbers: string;
