@@ -37,7 +37,7 @@ function App() {
 
 	return (
 		<div className="bg-muted min-h-screen p-5">
-			<main className="w-xl mx-auto">
+			<main className="w-full max-w-xl mx-auto">
 				<h1 className="text-2xl font-bold">Binary Search Visualizer</h1>
 				<p className="text-muted-foreground text-sm">
 					The BinaVry Search Visualizer is an interactive React application

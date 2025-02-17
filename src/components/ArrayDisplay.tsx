@@ -8,7 +8,7 @@ type Props = {
 
 const ArrayDisplay = ({ sortedNumbers, currentState }: Props) => {
 	return (
-		<div className="grid grid-cols-6 gap-2 mt-6">
+		<div className="grid grid-cols-4 md:grid-cols-6 gap-2 mt-6">
 			{sortedNumbers.map((num, index) => {
 				const isMid = index === currentState?.mid;
 				const isInRange =
