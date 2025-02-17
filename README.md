@@ -1,3 +1,4 @@
+![Binary Search Visualization](app-preview.png)
 # Binary Search Visualization
 The Binary Search Visualizer is an interactive React application designed to help users understand and visualize the binary search algorithm. Users can input a list of comma-separated numbers and a target value, and the application automatically checks if the list is sorted, sorts it if necessary, and performs a binary search to find the target. The visualization highlights the current search range, the middle element being evaluated, and the final result (if found) with clear color-coded indicators. Each step of the algorithm is animated, making it easy to follow the process of narrowing down the search range. This tool is perfect for students, developers, and anyone looking to deepen their understanding of binary search in an engaging and intuitive way.
 
