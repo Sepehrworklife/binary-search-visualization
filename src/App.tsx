@@ -1,8 +1,22 @@
+import { useMemo, useState } from "react";
 import ArrayDisplay from "./components/ArrayDisplay";
 import InputPanel from "./components/InputPanel";
 import Legend from "./components/Legend";
+import useBinarySearch, { StepState } from "./hooks/useBinarySearch";
 
 function App() {
+	const [steps, setSteps] = useState<StepState[]>([]);
+	const [currentStep, setCurrentStep] = useState(0);
+	const [inputNumbers, setInputNumbers] = useState("");
+	const [target, setTarget] = useState("");
+	const [isSearching, setIsSearching] = useState(false);
+	const handleSearch = useBinarySearch(
+		sortedNumbers,
+		target,
+		setSteps,
+		setCurrentStep,
+		setIsSearching,
+	);
 	return (
 		<div className="bg-muted min-h-screen p-5">
 			<main className="w-xl mx-auto">
