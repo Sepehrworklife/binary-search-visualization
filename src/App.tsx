@@ -1,6 +1,6 @@
-import "./App.css";
-import { Input } from "./components/ui/input";
-import { Button } from "./components/ui/button";
+import ArrayDisplay from "./components/ArrayDisplay";
+import InputPanel from "./components/InputPanel";
+import Legend from "./components/Legend";
 
 function App() {
 	return (
@@ -25,44 +25,9 @@ function App() {
 					</span>
 				</p>
 
-				<div className="flex flex-col gap-4 items-start mt-6">
-					<div className="w-full">
-						<label>Numbers: </label>
-						<Input placeholder="e.g., 1,2,3,4,5,6..." />
-					</div>
-					<div className="w-full">
-						<label>Target: </label>
-						<Input />
-					</div>
-					<Button className="cursor-pointer">Search</Button>
-				</div>
-
-				<div className="grid grid-cols-6 gap-2 mt-6">
-					{Array.from(Array(10).keys()).map(() => (
-						<div className="border bg-white rounded-lg flex flex-col justify-center items-center p-4">
-							<span className="font-bold">10</span>
-							<span className="text-muted-foreground text-sm">0</span>
-						</div>
-					))}
-				</div>
-
-				<div className="bg-white rounded-lg px-4 py-2 border mt-6">
-					Index found!
-				</div>
-				<div className="flex flex-row gap-4">
-					<div className="flex items-center gap-1">
-						<div className="w-3 h-3 rounded-full bg-orange-500"></div>
-						<span className="text-sm">Middle Element</span>
-					</div>
-					<div className="flex items-center gap-1">
-						<div className="w-3 h-3 rounded-full bg-lime-500"></div>
-						<span className="text-sm">Search range</span>
-					</div>
-					<div className="flex items-center gap-1">
-						<div className="w-3 h-3 rounded-full bg-teal-500"></div>
-						<span className="text-sm">Found Element</span>
-					</div>
-				</div>
+				<InputPanel />
+				<ArrayDisplay />
+				<Legend />
 			</main>
 		</div>
 	);
