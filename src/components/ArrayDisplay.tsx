@@ -16,7 +16,10 @@ const ArrayDisplay = ({ sortedNumbers, currentState }: Props) => {
 				const isFound = index === currentState?.foundIndex;
 				return (
 					<div
-						key={index}
+						key={
+							index
+							// Since sortedNumbers is derived from user input and then sorted, it does not change dynamically while rendering.
+						}
 						className={cn(
 							"border bg-white rounded-lg flex flex-col justify-center items-center p-4",
 							isInRange && "bg-indigo-100",
