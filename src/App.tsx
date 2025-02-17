@@ -12,10 +12,14 @@ function App() {
 	const [isSearching, setIsSearching] = useState(false);
 
 	const { sortedNumbers, isSorted } = useMemo(() => {
-		const numbers = inputNumbers
-			.split(",")
-			.map(Number)
-			.filter((n) => !isNaN(n));
+		const numbers = Array.from(
+			new Set(
+				inputNumbers
+					.split(",")
+					.map(Number)
+					.filter((n) => !isNaN(n)),
+			),
+		);
 		const sorted = [...numbers].sort((a, b) => a - b);
 		return {
 			sortedNumbers: sorted,
