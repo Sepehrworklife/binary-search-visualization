@@ -63,6 +63,10 @@ function App() {
 					handleSearch={handleSearch}
 					isSearching={isSearching}
 				/>
+				<ArrayDisplay
+					sortedNumbers={sortedNumbers}
+					currentState={steps[currentStep]}
+				/>
 				<div className="bg-primary text-primary-foreground rounded-lg px-4 py-2 mt-6 mb-2">
 					{steps[currentStep]?.message || "Enter numbers and target to begin"}
 				</div>
