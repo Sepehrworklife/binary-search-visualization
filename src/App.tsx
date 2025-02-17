@@ -30,6 +30,7 @@ function App() {
 		setCurrentStep,
 		setIsSearching,
 	);
+
 	return (
 		<div className="bg-muted min-h-screen p-5">
 			<main className="w-xl mx-auto">
@@ -52,8 +53,6 @@ function App() {
 					</span>
 				</p>
 
-				<InputPanel />
-				<ArrayDisplay />
 				<InputPanel
 					inputNumbers={inputNumbers}
 					setInputNumbers={setInputNumbers}
@@ -71,6 +70,10 @@ function App() {
 					{steps[currentStep]?.message || "Enter numbers and target to begin"}
 				</div>
 				<Legend />
+				<p className="text-sm text-muted-foreground mt-10 text-center">
+					This project was developed exclusively for Faash Company as part of
+					the interview process and is not intended for any other use.
+				</p>
 			</main>
 		</div>
 	);
