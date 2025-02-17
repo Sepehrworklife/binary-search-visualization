@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Binary Search Visualization
+The Binary Search Visualizer is an interactive React application designed to help users understand and visualize the binary search algorithm. Users can input a list of comma-separated numbers and a target value, and the application automatically checks if the list is sorted, sorts it if necessary, and performs a binary search to find the target. The visualization highlights the current search range, the middle element being evaluated, and the final result (if found) with clear color-coded indicators. Each step of the algorithm is animated, making it easy to follow the process of narrowing down the search range. This tool is perfect for students, developers, and anyone looking to deepen their understanding of binary search in an engaging and intuitive way.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features  
+- **Step-by-step visualization** of the binary search algorithm  
+- **User input support** to test different number sequences  
+- **Real-time sorting and duplicate removal** for cleaner results  
+- **Interactive UI** with animations for better understanding  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Installation & Setup  
+1. Clone the project
+2. Install Dependencies with `pnpm install`
+3. Run(dev) or Build
+   1. Build
+      1. `pnpm build`
+      2. `pnpm preview`
+      3. Browse `http://localhost:5173` by default
+   3. Run (Development)
+      1. `pnpm dev`
+      2. Browse `http://localhost:5173` by default
+     
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### ⚠️ Disclaimer  
+This project was developed exclusively for Faash Company as part of the interview process and is not intended for any other use.
