@@ -19,7 +19,7 @@ const useBinarySearch = (
 		if (!target || sortedNumbers.length === 0) return;
 
 		const targetNumber = Number(target);
-		let steps: StepState[] = [];
+		const steps: StepState[] = [];
 		let low = 0;
 		let high = sortedNumbers.length - 1;
 
